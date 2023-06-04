@@ -1821,7 +1821,7 @@ input, select, textarea {
 			font-weight: 600;
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
-			text-transform: uppercase;
+			text-transform: lower;
 		}
 
 		body.is-ie header.major > :first-child:after {
@@ -2856,7 +2856,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #2fc3df;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -3149,7 +3149,7 @@ input, select, textarea {
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
@@ -3284,7 +3284,7 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #2fc3df;
 			}
 
 			#header.alt.style2 .logo strong {
@@ -3436,6 +3436,7 @@ input, select, textarea {
 			transition-delay: 0.75s;
 			pointer-events: none;
 			background-color: #242943;
+			background-image: url("images/AdobeStock_265254915.jpeg");
 			content: '';
 			display: block;
 			height: 100%;
@@ -3502,7 +3503,7 @@ input, select, textarea {
 					font-size: 0.7em;
 					font-weight: 600;
 					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					text-transform: capitalize;
 				}
 
 		#banner.major {
@@ -3516,7 +3517,8 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #2fc3df;
+			
 		}
 
 		#banner.style2:after {
