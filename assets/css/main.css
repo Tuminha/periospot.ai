@@ -1,6 +1,31 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@100&display=swap'); /* for Thin */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@100i&display=swap'); /* for Thin Italic */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@300&display=swap'); /* for Light */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@300i&display=swap'); /* for Light Italic */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@400&display=swap'); /* for Regular */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@400i&display=swap'); /* for Regular Italic */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@700&display=swap'); /* for Bold */
+@import url('https://fonts.googleapis.com/css2?family=Bariol:wght@700i&display=swap'); /* for Bold Italic */
+@font-face {
+	font-family: 'Bariol Bold';
+	src: url('path_to_your_font/bariol-bold.woff2') format('woff2'),
+		 url('path_to_your_font/bariol-bold.woff') format('woff');
+  }
+  
+  @font-face {
+	font-family: 'Bariol Thin';
+	src: url('path_to_your_font/bariol-thin.woff2') format('woff2'),
+		 url('path_to_your_font/bariol-thin.woff') format('woff');
+  }
+  
+  @font-face {
+	font-family: 'Bariol Light';
+	src: url('path_to_your_font/bariol-light.woff2') format('woff2'),
+		 url('path_to_your_font/bariol-light.woff') format('woff');
+  }
+  
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -22,7 +47,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: Bariol;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -117,7 +142,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Bariol Bold', 'Bariol Thin', 'Bariol Light', sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -3380,7 +3405,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("/Users/franciscoteixeirabarbosa/projects/periospot.ai/images/AdobeStock_265254915.jpeg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
