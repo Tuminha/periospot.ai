@@ -3977,3 +3977,36 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+
+/* Landingpage */
+
+	.landingpage-navbar {
+		width: 25%;
+	}
+
+	.landingpage-navbar ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.landingpage-navbar ul li a {
+		display: block;
+		padding: 10px 0;
+		text-decoration: none;
+		color: white;
+	}
+
+	.landingpage-main-content {
+		width: 70%;
+		background-color: black;
+	}
+
+	.landingpage-sign-up {
+		display: inline-block;
+		border: 2px solid white;
+		padding: 10px 20px;
+		color: white;
+		background: transparent;
+		border-radius: 20px;
+	}
