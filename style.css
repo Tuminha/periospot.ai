@@ -172,12 +172,6 @@ nav ul li a {
 
 /* Making hero video resposive*/
 
-@media (max-width: 768px) {
-  .hero-video {
-    height: 400px; /* Or any pixel value that works well for you */
-  }
-}
-
   
 
 
@@ -191,21 +185,6 @@ nav ul li a {
   padding: 30px;
   border-radius: 25px;
 
-}
-
-@media screen and (max-width: 768px) {
-  .intro-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 12;
-    backdrop-filter: blur(50px) brightness(50%);
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    border-radius: 25px;
-  }
 }
 
 
@@ -490,3 +469,32 @@ body .parallax {
   justify-content: center;
 }
 
+
+
+
+/* media for the different screen sizes*/
+
+@media screen and (max-width: 768px) {
+  .intro-section {
+    height: auto; /* adjust this to fit your content */
+  }
+  
+  .hero-video {
+    height: 100%; /* set the height to 100% of its container */
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 12;
+    backdrop-filter: blur(50px) brightness(50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 25px;
+  }
+}
