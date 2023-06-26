@@ -174,9 +174,11 @@ nav ul li a {
 
 @media (max-width: 768px) {
   .hero-video {
-    height: 60vh; /* Or any height that works well for you */
+    height: 400px; /* Or any pixel value that works well for you */
   }
 }
+
+  
 
 
 
