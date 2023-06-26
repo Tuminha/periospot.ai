@@ -170,6 +170,14 @@ nav ul li a {
   z-index: 1;
 }
 
+/* Making hero video resposive*/
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 60vh; /* Or any height that works well for you */
+  }
+}
+
 
 
 .intro-text {
@@ -309,7 +317,8 @@ nav ul li a {
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(10px);
 	padding: 2em;
-	width: 400px;
+	width: 80vw;
+  max-width:400px;
 	height: 280px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
