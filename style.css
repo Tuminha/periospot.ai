@@ -193,6 +193,22 @@ nav ul li a {
 
 }
 
+@media screen and (max-width: 768px) {
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 12;
+    backdrop-filter: blur(50px) brightness(50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 25px;
+  }
+}
+
+
 
 
 .intro-heading {
