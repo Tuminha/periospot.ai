@@ -70,12 +70,11 @@
 
 /* This styles the body element. It sets the background color to black. */
 
+/* This styles the body element. It sets the background color to black. */
+
 .topics-section {
   background-color: black;
 }
-
-
-
 
 /* This styles the header element. It positions it at the top of the page (0 pixels from the top) and it covers the full width of the page (100%). The background color is set to black. */
 header {
@@ -83,6 +82,7 @@ header {
   top: 0;
   width: 100%;
   background-color: black;
+  z-index: 12; 
 }
 
 /* This styles the nav element, which is nested inside the header. It sets the display to flex, which allows for the flexible layout. The items inside the nav (i.e., the logo and the ul) are spaced out evenly across the horizontal axis by 'justify-content: space-between'. Padding of 20px is added to all sides of the nav. The background color is set to black. */
@@ -91,6 +91,7 @@ nav {
   justify-content: space-between;
   padding: 20px;
   background-color: black;
+  z-index: 12; 
 }
 
 /* This styles the ul element inside the nav. The bullets for the list items are removed by 'list-style-type: none', and the list items are displayed in a row instead of a column by 'display: flex'. */
@@ -127,13 +128,37 @@ nav ul li a {
 /* This styles for the intro section. It sets the height of the section to 100vh, which means that it will cover the full height of the viewport. The background image is set to 'intro-bg.jpg' and the background size is set to cover the full width and height of the section. */
 
 .intro-section {
-  background-image: url('images/Blockchain/Group 33.png');
-  background-size: cover; /* This will make the image cover the entire section */
-  background-position: 80% center; /* This will center the image */
-  height: 100vh; /* This will make the section the same height as the viewport */
-  display: flex; /* This will allow you to position the text within the section */
-  align-items: center; /* This will vertically center the text */
+  height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  background: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 100%);
+  position: relative;
+  z-index: 11; 
 }
+
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.intro-text {
+  position: relative;
+  color: white;
+  z-index: 12 ;
+  backdrop-filter: blur(1px) brightness(90%);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  border-radius: 10px;
+
+}
+
+
 
 .intro-heading {
   margin-left: 80px; /* Adjust this value to position the text within the section */
@@ -141,14 +166,25 @@ nav ul li a {
   font-family: 'UltimaPro', sans-serif;
   font-weight: bold;
   
+
 }
 
 .intro-paragraph {
   font-weight: light;
   color:#fff;
-  margin-left: 80px;
+  margin-left: 5em;
   font-family: 'UltimaPro', sans-serif;
   font-weight: 300;
+  max-width: 35em; /* Adjust this value to your liking */
+  line-height: 150%;
+   
+}
+
+.intro-heading,
+.intro-paragraph,
+.intro-button {
+  position: relative;
+  z-index: 12;
 }
 
 /* This is where the "Sign Up" button is styled. It sets the background color to white, the text color to black, the font size to 20px, and the padding to 20px on all sides. */
@@ -173,24 +209,6 @@ nav ul li a {
   font-weight: bold;
   border: 0.5px solid #0011ed;
 }
-
-/* Set the style for the separator. It sets the width to 100% and the height to 1px. The background color is set to white. */
-
-.line { 
-  background-color: black; 
-  height: 0.5px;
-  width: 10% !important; /* Full width */
-  margin: 0 auto;
-  transform: scaleX(0); /* Initially scaled to 0 */
-  transform-origin: center; /* Scale from center */
-  transition: transform 2s ease-in-out;
-}
-
-.line:hover {
-  transform: scaleX(1); /* On hover, scale to original size */
-}
-
-
 /*
 .topic-image::after {
   content: "";
