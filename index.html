@@ -7,6 +7,9 @@
       <link rel="stylesheet" href="uikit/css/uikit.min.css" />
       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="card.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
       
 
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -79,7 +82,7 @@
       <figure  class="card__image">
         <img src="images/Blockchain/AdobeStock_447199446.jpeg" alt="Short description">
       </figure>
-      <<div class="card__header">
+      <div class="card__header">
         <figure class="card__profile">
           <img src="images/Blockchain/2.png" alt="Short description">
         </figure>
@@ -148,14 +151,28 @@
     
   </section>
 
-  <!-- Here the section for intro the why of Periospot AI-->
+  <section class="featured-article-wrapper">
+    <video class="bg-video" autoplay loop muted playsinline>
+      <source src="images/AI/AdobeStock_188402872.mov" type="video/mp4">
+    </video>
+    <div class="featured-article first" data-aos="fade-up" data-aos-delay="0">
+      <h1>Featured Article</h1>
+      <h2> AI</h2>
+      <p>The AI Role in the Modern Dentistry</p>
 
-  <section class="parallax">
-    <div class="overlay"></div>
-    <div class="quote">
-      <p>Your Quote Here</p>
-    </div>
+  </div>
+        
+  <div class="featured-article second light" data-aos="fade-up" data-aos-delay="200">
+      <h1>Featured Article</h1>
+      <h2>Blockchain</h2>
+      <p>What is Blockchain and What Are the use Cases in Dentistry</p>
+  </div>
+  
   </section>
+  
+  
+  
+  
   
 
 
@@ -193,11 +210,15 @@
 
 
    </section>
-
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script src="uikit/js/uikit.min.js"></script> <!-- This is for the UIkit -->
-  <script src="uikit/js/uikit-icons.min.js"></script> <!-- This is for the icons -->
-
+   <script src="uikit/js/uikit.min.js"></script> <!-- This is for the UIkit -->
+   <script src="uikit/js/uikit-icons.min.js"></script> <!-- This is for the icons -->
+   <script>
+     $(".featured-article").draggable({ stack: "div" });
+   </script>
+   <script>
+     AOS.init();
+   </script>
   </body>
 </html>

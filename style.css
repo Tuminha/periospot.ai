@@ -255,6 +255,139 @@ nav ul li a {
 }
 */
 
+/* This styles the featured article section" */
+
+.featured-article-wrapper {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjust as needed */
+  overflow: hidden; /* Prevents spillover */
+}
+
+.featured-article-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom, 
+    rgba(0, 0, 0, 0.95) 0%, 
+    rgba(0, 0, 0, 0) 25%, 
+    rgba(0, 0, 0, 0) 75%, 
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: -1;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.articles {
+  position: relative;
+  /* add styles for positioning and sizing the article containers as needed */
+}
+
+.featured-article {
+	position: relative;  /* Adjust to relative position */
+	background: linear-gradient(
+		-35deg,
+		rgba(17, 17, 17, 0.55) 0%,
+		rgba(34, 34, 34, 0.55) 100%
+	);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	padding: 2em;
+	width: 400px;
+	height: 280px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	color: white;
+	border-radius: 2em;
+	margin: 1em;
+  z-index: 1 ; /* This ensures the boxes appear over the video and gradient */
+
+}
+
+.featured-article h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Equinox, sans-serif;
+}
+
+.featured-article h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "UltimaPro", sans-serif;
+}
+
+.featured-article p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: "graviticalight", sans-serif;
+  font-weight: 200;
+}
+
+
+
+.featured-article.first {
+	top: 100px;
+	left: 50px;
+	z-index: 1; /* This ensures the boxes appear over the video and gradient */
+  
+}
+
+.featured-article.second {
+	top: 100px;
+	left: 50px;
+	z-index: 1; /* This ensures the boxes appear over the video and gradient */
+  
+}
+
+.featured-article::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 98.5%;
+	height: 98.5%;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	border-radius: 1.988em;
+	content: "";
+}
+
+.featured-article.light {
+	backdrop-filter: blur(7px);
+	background: linear-gradient(
+		-35deg,
+		rgba(238, 238, 238, 0.55) 0%,
+		rgba(255, 255, 255, 0.55) 100%
+	);
+	color: black;
+}
+
+.featured-article h1 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
 
 /* The CSS for the footer. It sets the background color to black, the text color to white, and the padding to 20px on all sides. */
 
@@ -315,32 +448,18 @@ nav ul li a {
   
 
 /* This syles the soup section" */
+body .parallax {
+  margin: 0;
+  height: 2000px;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
 
 .parallax {
-  background-image: url("images/AI/AdobeStock_265254915.jpeg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-}
-
-.overlay {
-  background-color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-.quote {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
