@@ -472,10 +472,21 @@ body .parallax {
 
 /* media for the different screen sizes*/
 
-@media screen and (max-width: 768px) {
-  .intro-section {
-    height: auto; /* adjust this to fit your content */
-  }
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  
+    .intro-section {
+      height: 100vh; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      background: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 100%);
+      position: relative;
+      z-index: 11; 
+      overflow: hidden;
+    }
   
   .hero-video {
     position: absolute;
@@ -492,10 +503,11 @@ body .parallax {
   .intro-text {
     position: relative;
     color: white;
-    z-index: 12;
-    backdrop-filter: blur(50px) brightness(50%);
+    z-index: 12 ;
+    backdrop-filter: blur (50px) brightness(50%);
     background-color: rgba(0, 0, 0, 0.4);
     padding: 30px;
     border-radius: 25px;
+    text-align: center;
   }
 }
