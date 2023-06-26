@@ -72,8 +72,39 @@
   }
   
 
+/* Here th css for the intro text in the cards section that should be in the top, aligned right, on top of the section and with a samll space with the first card */
 
+.intro-textcards {
+  grid-area: menu;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fontLarge);
+  font-weight: var(--fontLight);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+}
+.intro-textcards h1 {
+  font-size: var(--fontLarge);
+  font-weight: var(--fontLight);
+  font-family: "ultimaPro";
+  font-weight: bold;
+  color: white;
   
+}
+
+.intro-textcards p {
+  font-size: var(--fontMedium);
+  font-weight: var(--fontLight);
+  font-family: "UltimaPro";
+  font-weight: 300;
+  
+}
+
+
+
   .card {
     position: relative;
     grid-area: card;
