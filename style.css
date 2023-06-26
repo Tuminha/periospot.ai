@@ -475,6 +475,10 @@ body .parallax {
 /* media for the different screen sizes*/
 
 @media screen and (max-width: 768px) {
+  .intro-section {
+    height: auto; /* adjust this to fit your content */
+  }
+  
   .hero-video {
     position: absolute;
     top: 50%;
@@ -487,7 +491,6 @@ body .parallax {
     transform: translate(-50%, -50%);
     object-fit: cover;
   }
-
   .intro-text {
     position: relative;
     color: white;
