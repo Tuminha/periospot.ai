@@ -145,16 +145,41 @@ nav ul li a {
   height: 100vh;
   z-index: -1;
   object-fit: cover;
+  object-position: 10% center;
+
 }
+
+.section .hero-video::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* adjust this to control the height of the gradient */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 66%, rgba(0,0,0,1) 100%);
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 66%, rgba(0,0,0,1) 100%);
+  z-index: 1;
+}
+
+
 
 .intro-text {
   position: relative;
   color: white;
   z-index: 12 ;
-  backdrop-filter: blur(1px) brightness(90%);
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 50px;
-  border-radius: 10px;
+  backdrop-filter: blur (50px) brightness(50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 25px;
 
 }
 
@@ -165,6 +190,10 @@ nav ul li a {
   color: white; /* Adjust this as needed */
   font-family: 'UltimaPro', sans-serif;
   font-weight: bold;
+  line-height: 1.2;
+  padding-top: 15px;
+  font-size: 40px;
+  
   
 
 }
