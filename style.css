@@ -1,0 +1,299 @@
+/* Import the fonts */
+
+@font-face {
+  font-family: 'Equinox';
+  src: url('../fonts/Equinox-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Equinox';
+  src: url('../fonts/Equinox-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gravitica';
+  src: url('../fonts/ckhans-fonts-gravitica-light-demo.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro-Bold_0.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro-Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro-BoldItalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaProLt.otf');
+  font-weight: 300; /* light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaProLt-Italic.otf');
+  font-weight: 300; /* light */
+  font-style: italic;
+}
+
+
+
+
+
+
+/* This styles the body element. It sets the background color to black. */
+
+.topics-section {
+  background-color: black;
+}
+
+
+
+
+/* This styles the header element. It positions it at the top of the page (0 pixels from the top) and it covers the full width of the page (100%). The background color is set to black. */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+/* This styles the nav element, which is nested inside the header. It sets the display to flex, which allows for the flexible layout. The items inside the nav (i.e., the logo and the ul) are spaced out evenly across the horizontal axis by 'justify-content: space-between'. Padding of 20px is added to all sides of the nav. The background color is set to black. */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+}
+
+/* This styles the ul element inside the nav. The bullets for the list items are removed by 'list-style-type: none', and the list items are displayed in a row instead of a column by 'display: flex'. */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* This styles each list item (li) inside the ul. It adds a left margin of 20px to space out the list items. */
+nav ul li {
+  margin-left: 20px;
+  padding-top: 10px;
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: 300;
+  padding-right: 20px
+}
+
+/* This styles the anchor elements (a) inside the list items. It removes any underlining from the links by 'text-decoration: none' and sets the color of the links to white. */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* This styles the element with the id 'logo'. It sets the font size to 20px, makes the text bold by 'font-weight: bold', and sets the color of the text to white. */
+#logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Equinox', sans-serif;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+/* This styles for the intro section. It sets the height of the section to 100vh, which means that it will cover the full height of the viewport. The background image is set to 'intro-bg.jpg' and the background size is set to cover the full width and height of the section. */
+
+.intro-section {
+  background-image: url('images/Blockchain/Group 33.png');
+  background-size: cover; /* This will make the image cover the entire section */
+  background-position: 80% center; /* This will center the image */
+  height: 100vh; /* This will make the section the same height as the viewport */
+  display: flex; /* This will allow you to position the text within the section */
+  align-items: center; /* This will vertically center the text */
+}
+
+.intro-heading {
+  margin-left: 80px; /* Adjust this value to position the text within the section */
+  color: white; /* Adjust this as needed */
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: bold;
+  
+}
+
+.intro-paragraph {
+  font-weight: light;
+  color:#fff;
+  margin-left: 80px;
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: 300;
+}
+
+/* This is where the "Sign Up" button is styled. It sets the background color to white, the text color to black, the font size to 20px, and the padding to 20px on all sides. */
+
+.intro-button {
+  border: 0.5px solid #E80100; /* This sets the color of the thin line around the button */
+  color: #fff; /* This sets the color of the text */
+  background-color: transparent; /* This makes the button transparent */
+  padding: 10px 20px; /* This sets the size of the button, adjust as needed */
+  font-size: 16px; /* This sets the size of the text, adjust as needed */
+  cursor: pointer; /* This changes the cursor to a hand when hovering over the button */
+  text-decoration: none; /* This removes any default underline on the text */
+  transition: background 0.3s ease; /* This makes the color change smoothly when the button is hovered over */
+  margin-left: 80px;
+  font-family: 'Equinox', sans-serif;
+  border-radius: 20px;
+}
+
+.intro-button:hover {
+  background-color: transparent; /* This changes the color of the button when it's hovered over */
+  color: #E80100; /* This sets the color of the text when the button is hovered over */
+  font-weight: bold;
+  border: 0.5px solid #0011ed;
+}
+
+/* Set the style for the separator. It sets the width to 100% and the height to 1px. The background color is set to white. */
+
+.line { 
+  background-color: black; 
+  height: 0.5px;
+  width: 10% !important; /* Full width */
+  margin: 0 auto;
+  transform: scaleX(0); /* Initially scaled to 0 */
+  transform-origin: center; /* Scale from center */
+  transition: transform 2s ease-in-out;
+}
+
+.line:hover {
+  transform: scaleX(1); /* On hover, scale to original size */
+}
+
+
+/*
+.topic-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.topic-card:hover .topic-image::after {
+  background-color: transparent;
+}
+*/
+
+
+/* The CSS for the footer. It sets the background color to black, the text color to white, and the padding to 20px on all sides. */
+
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'UltimaPro', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#007fed;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+  
+
+/* This syles the soup section" */
+
+.parallax {
+  background-image: url("images/AI/AdobeStock_265254915.jpeg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.quote {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
