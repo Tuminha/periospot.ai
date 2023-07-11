@@ -1,337 +1,514 @@
-*,
-*:before,
-*:after {
+/* Import the fonts */
+
+@font-face {
+  font-family: 'Equinox';
+  src: url('../fonts/Equinox-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Equinox';
+  src: url('../fonts/Equinox-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gravitica';
+  src: url('../fonts/ckhans-fonts-gravitica-light-demo.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro-Bold_0.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro-Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaPro-BoldItalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaProLt.otf');
+  font-weight: 300; /* light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UltimaPro';
+  src: url('../fonts/UltimaProLt-Italic.otf');
+  font-weight: 300; /* light */
+  font-style: italic;
+}
+
+/* Style for the "hero-section" and navbar and logo same as in index.html*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 12; 
+}
+
+/* This styles the nav element, which is nested inside the header. It sets the display to flex, which allows for the flexible layout. The items inside the nav (i.e., the logo and the ul) are spaced out evenly across the horizontal axis by 'justify-content: space-between'. Padding of 20px is added to all sides of the nav. The background color is set to black. */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: black;
+  z-index: 12;
+  box-sizing: border-box; 
+}
+
+/* This styles the ul element inside the nav. The bullets for the list items are removed by 'list-style-type: none', and the list items are displayed in a row instead of a column by 'display: flex'. */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: 300;
+}
+
+
+/* This styles each list item (li) inside the ul. It adds a left margin of 20px to space out the list items. */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* This styles the element with the id 'logo'. It sets the font size to 20px, makes the text bold by 'font-weight: bold', and sets the color of the text to white. */
+#logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Equinox', sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+#logo a {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Equinox', sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+/* Style for the intro-section-app with an image that displayed in full width and height */
+
+.intro-section-app {
+  height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  background: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 100%);
+  position: relative;
+  z-index: 11; 
+
+}
+
+
+
+
+/* Style for hero-image-app leaving some margin on top to compensate the navbar */
+
+.hero-image-app {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+
+}
+
+/* Style for intro-text-app */
+
+.intro-text-app {
+  position: relative;
+  color: white;
+  z-index: 12 ;
+  backdrop-filter: blur (50px) brightness(50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 25px;
+  max-width: 700px;
+
+}
+
+
+/* Style for intro-heading-app */
+
+.intro-heading-app {
+  margin-left: 80px; /* Adjust this value to position the text within the section */
+  color: white; /* Adjust this as needed */
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-top: 15px;
+  font-size: 40px;
+  
+  
+
+}
+
+
+/* Style for intro-paragraph-app */
+
+.intro-paragraph-app {
+  font-weight: light;
+  color:#fff;
+  margin-left: 80px; /* Adjust this value to position the text within the section */
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: 300;
+  max-width: 50em; /* Adjust this value to your liking */
+  line-height: 2;  
+  margin-top: 20px; 
+}
+
+.intro-heading,
+.intro-paragraph,
+.intro-button {
+  position: relative;
+  z-index: 12;
+}
+
+/* Style for intro-button */
+
+.intro-button {
+  border: 0.5px solid #E80100; /* This sets the color of the thin line around the button */
+  color: #fff; /* This sets the color of the text */
+  background-color: transparent; /* This makes the button transparent */
+  padding: 10px 20px; /* This sets the size of the button, adjust as needed */
+  font-size: 16px; /* This sets the size of the text, adjust as needed */
+  cursor: pointer; /* This changes the cursor to a hand when hovering over the button */
+  text-decoration: none; /* This removes any default underline on the text */
+  transition: background 0.3s ease; /* This makes the color change smoothly when the button is hovered over */
+  margin-left: 80px;
+  font-family: 'Equinox', sans-serif;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+
+/* Style for "card" section */
+
+
+
+:root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+*{
+  border: 0;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
-
-html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 62.5%;
-}
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 57%;
-  }
 }
 
-body {
-  background-color: #000;
-  color: #fff;
-  padding: 8rem;
-}
-@media only screen and (max-width: 1000px) {
-  body {
-    padding: 0;
-  }
+html{
+  height: 100%;
+  font-family: 'UltimaPro', sans-serif;
+  font-size: 14px;
 }
 
-.container {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5rem;
-}
-@media only screen and (max-width: 1000px) {
-  .container {
-    border-radius: 0;
-  }
+body{
+  height: 100%;
 }
 
-.slider {
+.card-section{
+  align-items: flex-start;
+  background-color: black;
   display: flex;
-  width: 500%;
-  height: 55rem;
-  transition: all 0.25s ease-in;
-  transform: translateX(0);
-}
-@media only screen and (max-width: 1000px) {
-  .slider {
-    height: 100vh;
-  }
-}
-.slider .box {
-  height: 100%;
+  min-height: auto;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
   position: relative;
+
+
+
 }
-@media only screen and (max-width: 650px) {
-  .slider .box {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-.slider .box .bg {
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 55%;
-  transform: skewX(7deg);
-  position: absolute;
-  height: 100%;
-  left: -10%;
-  padding-left: 20rem;
-  transform-origin: 0 100%;
-}
-@media only screen and (max-width: 800px) {
-  .slider .box .bg {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .slider .box .bg {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 54%;
-    transform: skewX(0deg);
-  }
-}
-.slider .box .bg::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: inherit;
-  pointer-events: none;
-  transform: skewX(10deg);
-}
-@media only screen and (max-width: 650px) {
-  .slider .box .bg::before {
-    width: 120%;
-    bottom: 0;
-    transform: skewX(0deg);
-  }
-}
-.slider .box .details {
-  padding: 5rem;
-  padding-left: 10rem;
-  z-index: 100;
-  grid-column: 1/span 1;
-  grid-row: 1/-1;
-}
-@media only screen and (max-width: 650px) {
-  .slider .box .details {
-    grid-row: 2/span 1;
-    grid-column: 1/-1;
-    text-align: center;
-    padding: 2rem;
-    transform: translateY(-9rem);
-  }
-}
-.slider .box .details h1 {
-  font-size: 3.5rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.slider .box .details p {
-  display: inline-block;
-  font-size: 1.3rem;
-  color: #B5B4B4;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
-}
-@media only screen and (max-width: 800px) {
-  .slider .box .details p {
-    margin-right: 0;
-  }
-}
-.slider .box .details button {
-  padding: 1rem 3rem;
+
+.intro-apps-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   color: #fff;
-  border-radius: 2rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.slider .box .details button:hover {
-  opacity: 0.8;
-}
-.slider .box .details button:focus {
-  outline: none;
-  border: none;
-}
-.slider .box1 {
-  background-color: #500033;
-}
-.slider .box1 .illustration .inner {
-  background-color: #FF0077;
-}
-.slider .box1 .illustration .inner::after, .slider .box1 .illustration .inner::before {
-  background-color: rgba(255, 0, 119, 0.4);
-}
-.slider .box1 button {
-  background-color: #FF0077;
-}
-.slider .box2 {
-  background-color: #000050;
-}
-.slider .box2 .illustration .inner {
-  background-color: #0033FF;
-}
-.slider .box2 .illustration .inner::after, .slider .box2 .illustration .inner::before {
-  background-color: rgba(0, 51, 255, 0.4);
-}
-.slider .box2 button {
-  background-color: #0033FF;
-}
-.slider .box3 {
-  background-color: #00501D;
-}
-.slider .box3 .illustration .inner {
-  background-color: #00FF44;
-}
-.slider .box3 .illustration .inner::after, .slider .box3 .illustration .inner::before {
-  background-color: rgba(0, 255, 68, 0.4);
-}
-.slider .box3 button {
-  background-color: #00FF44;
-}
-.slider .box4 {
-  background-color: #554D00;
-}
-.slider .box4 .illustration .inner {
-  background-color: #FF4E00;
-}
-.slider .box4 .illustration .inner::after, .slider .box4 .illustration .inner::before {
-  background-color: rgba(255, 78, 0, 0.4);
-}
-.slider .box4 button {
-  background-color: #FF4E00;
-}
-.slider .box5 {
-  background-color: #300050;
-}
-.slider .box5 .illustration .inner {
-  background-color: #8000FF;
-}
-.slider .box5 .illustration .inner::after, .slider .box5 .illustration .inner::before {
-  background-color: rgba(128, 0, 255, 0.4);
-}
-.slider .box5 button {
-  background-color: #8000FF;
-}
-.slider .illustration {
-  grid-column: 2/-1;
-  grid-row: 1/-1;
-  justify-self: center;
-}
-@media only screen and (max-width: 650px) {
-  .slider .illustration {
-    grid-row: 1/span 1;
-    grid-column: 1/-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.slider .illustration div {
-  height: 25rem;
-  width: 18rem;
-  border-radius: 3rem;
-  background-color: #FF0077;
-  position: relative;
-  transform: skewX(-10deg);
-}
-@media only screen and (max-width: 800px) {
-  .slider .illustration div {
-    height: 20rem;
-    width: 15rem;
-  }
-}
-.slider .illustration div::after, .slider .illustration div::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 3rem;
-  top: 0;
-  left: 0;
-}
-.slider .illustration div::after {
-  transform: translate(4rem, -1rem);
-}
-.slider .illustration div::before {
-  transform: translate(2rem, -2rem);
-}
-
-.prev,
-.next,
-.trail {
-  z-index: 10000;
-  position: absolute;
-}
-
-.prev,
-.next {
-  width: 4rem;
-  cursor: pointer;
-  opacity: 0.2;
-  transition: all 0.3s ease;
-}
-@media only screen and (max-width: 650px) {
-  .prev,
-.next {
-    display: none;
-  }
-}
-.prev:hover,
-.next:hover {
-  opacity: 1;
-}
-
-.prev {
-  top: 50%;
-  left: 2%;
-  transform: translateY(-50%);
-}
-
-.next {
-  top: 50%;
-  right: 2%;
-  transform: translateY(-50%);
-}
-
-.trail {
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  font-family: 'UltimaPro', sans-serif;
   text-align: center;
-  font-size: 1.5rem;
+  z-index: 10;
+  width: 100%;
 }
-@media only screen and (max-width: 650px) {
-  .trail {
-    width: 90%;
-    bottom: 13%;
-  }
+
+.intro-heading-apps {
+  margin-left: 80px; 
+  color: white; 
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-top: 15px;
+  font-size: 40px;
+  
 }
-.trail div {
-  padding: 2rem;
-  border-top: 3px solid #fff;
-  cursor: pointer;
-  opacity: 0.3;
-  transition: all 0.3s ease;
+
+.intro-paragraph-apps {
+  font-weight: light;
+  color:#fff;
+  font-family: 'UltimaPro', sans-serif;
+  font-weight: 300;
+  line-height: 2;  
+  margin-top: 20px; 
+  margin-bottom: 30px;
+  padding-bottom: 0px;
 }
-.trail div:hover {
-  opacity: 0.6;
+
+
+
+.card-grid{
+  display: grid;
+  margin-top: 0px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+  padding-top: 0px;
 }
-@media only screen and (max-width: 650px) {
-  .trail div {
-    padding: 1rem;
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-.active {
-  opacity: 1 !important;
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
 }
+
+.card{
+  list-style: none;
+  position: relative;
+  margin: 25px;
+  
+  transform: translateZ(0);
+}
+
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+  
+}
+
+.card:hover .card__background{
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05) translateZ(0);
+}
+
+
+
+.card-grid:hover > .card:not(:hover) .card__background { 
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-grid:hover > .card:not(:hover) .card-paragraph {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-grid:hover > .card:not(:hover) .card-heading {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-grid:hover > .card:not(:hover) .card-button {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-grid:hover > .card:not(:hover) .card__category {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+  pointer-events: none; /* Add this line */
+}
+
+.card__category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+  color: #fff;
+}
+
+
+.card-button {
+  border: 0.5px solid #E80100; /* This sets the color of the thin line around the button */
+  color: #fff; /* This sets the color of the text */
+  background-color: transparent; /* This makes the button transparent */
+  padding: 5px 10px; /* This sets the size of the button, adjust as needed */
+  font-size: 14px; /* This sets the size of the text, adjust as needed */
+  cursor: pointer; /* This changes the cursor to a hand when hovering over the button */
+  text-decoration: none; /* This removes any default underline on the text */
+  transition: background 0.3s ease; /* This makes the color change smoothly when the button is hovered over */
+  margin-left: auto;
+  font-family: 'Equinox', sans-serif;
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  pointer-events: auto;
+  
+}
+
+.card-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.card-paragraph {
+  color: #fff;
+  font-weight: 300;
+  font-family: 'UltimaPro', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Style for the footer */
+
+/* The CSS for the footer. It sets the background color to black, the text color to white, and the padding to 20px on all sides. */
+
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'UltimaPro', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#007fed;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }

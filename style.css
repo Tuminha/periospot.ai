@@ -70,6 +70,10 @@
 
 /* This styles the body element. It sets the background color to black. */
 
+body {
+  background-color: black;
+}
+
 .topics-section {
   background-color: black;
 }
@@ -518,35 +522,42 @@ body .parallax {
 
 /* Create a smooth fade in effect when the hero image is loaded */
 
+.hero-image-app {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
 
 
 
 /* CSS for the hero section. here also goes the image that has to cover full width and with a margin in the top and buttom */
 
-.hero-image-app {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100vh; /* This sets the minimum height to the full viewport height */
-  width: auto;
-  height: 80%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-}
-
-
 .intro-section-app {
-  height: 100vh; 
   display: flex; 
-  align-items: flex-end; /* This aligns the text towards the bottom of the hero section */
   justify-content: center; 
   background: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 100%);
   position: relative;
   z-index: 0; 
   overflow: hidden;
+  width:100%;
+  height: 1000px;
+
 }
+
+/* Image should be centered in the section and displayed in full width and height */
+.hero-image-app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 
 /* Set the image to cover full width and to be responsive to be filling the full width but with marging in the top and buttom */
 
@@ -555,15 +566,18 @@ body .parallax {
 .intro-text-app {
   position: relative;
   color: white;
+  align-content: center;
   z-index: 1;
   backdrop-filter: blur (50px) brightness(50%);
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 30px;
   border-radius: 25px;
   margin-right: 50%;
   text-align: bottom;
-  margin-bottom: 30%; /* You can adjust this value to move the text up or down */
   margin-left: 50px;
+  margin-top: 300px;
+  margin-bottom: 200px;
+  
+
 
 }
 
@@ -596,7 +610,6 @@ body .parallax {
 
 @media only screen and (max-width: 600px) {
   .intro-section-app {
-    height: 100vh; 
     display: flex; 
     align-items: flex-end; /* This aligns the text towards the bottom of the hero section */
     justify-content: center; 
@@ -634,31 +647,42 @@ body .parallax {
 
 /* Line separating the Hero section and the app-cards section. Very thin white line with the all black background */
 
-.line-app {
-  border: 0.5px solid #fff;
-  width: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
-  background-color: #000;
-
-}
 
 
 
 /* Style the cards for the three apps. Each app app will be represented by a container filled with a color and a text. The container will change color when the mouse hovers over it. */
 
-.app-cards {
+.app-cards-container {
   background-color: #000;
-}
-
-.app-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 50px;
 
 }
- /* This styles the container for the app cards. It sets the width to 30% of the viewport width, the height to 300px, the background color to white, and the margin to 20px on all sides. */
 
- .
+.PerioChat, .PerioPointer, .PerioBot {
+  width: 30%;
+  height: 300px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.PerioChat {
+  background-color: pink;
+}
+
+.PerioPointer {
+  background-color: green;
+}
+
+.PerioBot {
+  background-color: red;
+}

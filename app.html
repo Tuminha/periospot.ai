@@ -3,12 +3,8 @@
   <head>
       <meta charset="UTF-8">
       <title>Periospot AI</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="uikit/css/uikit.min.css" />
-      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="card.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <link rel="stylesheet" type="text/css" href="app.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
       
 
@@ -16,9 +12,10 @@
   </head>
   <body>
   <!--This is the header part with the navigation bar and the logo in the top left-->
-  <header>
+<header>
     <nav>
-      <div id="logo">Periospot AI</div>
+      <!-- Link logo to index.html or home page without underlining the text-->
+      <div id="logo" class="logo"><a href="index.html">Periospot AI</a></div>
       <ul>
         <li><a href="#start-here">Start Here</a></li>
         <li><a href="#articles">Articles</a></li>
@@ -26,7 +23,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+</header>
 
   <section class="intro-section-app">
 
@@ -45,40 +42,80 @@
   </section>
 
 
-    <!-- Here a line break between the two sections-->
 
-    <div id= "line-app" class="line-app"></div>
 
     <!--This is the section there will be a the app-cards section presenting the 3 cards: PerioChat, an innovative app that answers based on the scientific literatue, PerioPointer, an app that creates presentations based on prompts, and a PerioBot that allows user to upload files and chat with them. No image. Contaniners will be filled with collors-->
 
-    <section class="app-cards" id="app-cards">
 
-        <div class="app-cards-container">
 
-            <div class="PerioChat" data-aos="fade-right" data-aos-duration="1000">
-                <div class="app-PerioChat-text">
-                    <h1 class="app-PerioChat-heading">PerioChat</h1>
-                    <p class="app-PerioChat-paragraph">PerioChat is an innovative app that answers based on the scientific literatue</p>
-                    <button class="app-PerioChat-button">Read more</button>
-                </div>
-
-                <div class="PerioPointer" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="PerioPointer-text">
-                        <h1 class="PerioPointer-heading">PerioPointer</h1>
-                        <p class="PerioPointer-paragraph">PerioPointer is an app that creates presentations based on prompts</p>
-                        <button class="PerioPointer-button">Read more</button>
-                    </div>
-                
-                    <div class="PerioBot" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="PerioBot-text">
-                            <h1 class="PerioBot-heading">PerioBot</h1>
-                            <p class="PerioBot-paragraph">PerioBot is an app that allows user to upload files and chat with them</p>
-                            <button class="PerioBot-button">Read more</button>
-                        </div>
-
+    <section class="card-section">
+      <div class="intro-apps-text">
+        <h1 class="intro-heading-apps">Choose your app</h1>
+        <p class="intro-paragraph-apps">Explore the latest insights on blockchain, AI, Web 3.0, and IoT, tailored specifically for the dental community.</p>
+      </div>
+        <div class="card-grid">
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(images/AI/AdobeStock_265254915.jpeg)"></div>
+            <div class="card__content">
+              <p class="card__category">AI</p>
+              <h1 class="card-heading">PerioChat</h1>
+                <p class="card-paragraph">PerioChat is an innovative app that answers based on the scientific literature</p>
+                <button class="card-button">Read more</button>
             </div>
-                
+          </a>
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(images/Blockchain/AdobeStock_31432861.jpeg)"></div>
+            <div class="card__content">
+              <p class="card__category">AI</p>
+              <h1 class="card-heading">PerioPointer</h1>
+                    <p class="card-paragraph">PerioPointer is an app that creates presentations based on prompts</p>
+                    <button class="card-button">Read more</button>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(images/Blockchain/AdobeStock_447199446.jpeg)"></div>
+            <div class="card__content">
+              <p class="card__category">AI</p>
+              <h1 class="card-heading">PerioBot</h1>
+                    <p class="card-paragraph">PerioBot is an app that allows users to upload files and chat with them</p>
+                    <button class="card-button">Read more</button>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(images/web3/AdobeStock_443655165.jpeg)"></div>
+            <div class="card__content">
+              <p class="card__category">General</p>
+              <h1 class="card-heading">PerioConverter</h1>
+                    <p class="card-paragraph">PerioConverter is an app that rename thousands of pdfs in seconds</p>
+                    <button class="card-button">Read more</button>
+            </div>
+          </a>
+        </div>
+      </section>
 
-
-
-    </section>
+      <section id="footer">
+        <footer>
+          <div class="footer">
+          <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+          
+          <div class="row">
+          <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">AI</a></li>
+          <li><a href="#">Blockchain</a></li>
+          <li><a href="#">Web 3.0</a></li>
+          <li><a href="#">IoT</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          </div>
+          
+          <div class="row">
+          Periospot AI Copyright © 2023 Periospot - All rights reserved || Designed By: Cisco 
+          </div>
+          </div>
+          </footer>
