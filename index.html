@@ -13,7 +13,7 @@
         <nav class="main-navigation">
             <img
               loading="lazy"
-              src="./assets/images/home images/Logo_inactive.png"
+              src="./assets/images/home_images/Logo_inactive.png"
               class="logo-image"
               alt="Periospot AI Logo"
             />
@@ -26,8 +26,11 @@
     </header>
     <main class="main-content">
         <section class="intro-section">
+          <div class="intro-text">
             <h1>Learning AI in Dentistry</h1>
-            <p>Navigate the intersection of technology and dentistry with our expert-curated insights and articles.</p>
+            <h3>Navigate the intersection of technology and dentistry with our expert-curated insights and articles.</h3>
+            <button class="button">Get Started</button>
+          </div>
             <img
               loading="lazy"
               src="./assets/images/home_images/Business_Plan.png"
@@ -35,11 +38,19 @@
               alt="Business Plan"
             />
         </section>
-        <section class="featured-content-section">
+        <section class="featured-content-cards-section">
+            <div class="featured-content-cards-headline">
             <h2>Curated Featured Content</h2>
-            <article class="content-card">
+            </div>
+            <div class="featured-content-cards-container">
+            <article class="content-card" id="card-1">
+                <div class="hashtags" id="hashtag-1">
+                <p>#Scientific</p>
+                </div>
+                <div class="card-text">
                 <h3>Scientific Research</h3>
                 <p>Explore pioneering studies where AI meets clinical dentistry. Discover how machine learning and data science are revolutionizing dental research.</p>
+                </div>
                 <img
                   loading="lazy"
                   src="./assets/images/home_images/scientific_research_card.jpeg"
@@ -47,9 +58,14 @@
                   alt="Scientific Research Card"
                 />
             </article>
-            <article class="content-card">
+            <article class="content-card" id="card-2">
+                <div class="hashtags" id="hashtag-2">
+                <p>#AITechnology</p>
+                </div>
+                <div class="card-text">
                 <h3>New AI Technology</h3>
                 <p>From diagnostic algorithms to automated patient management, find out how new AI technologies are being integrated into dental practices.</p>
+                </div>
                 <img
                   loading="lazy"
                   src="./assets/images/home_images/new_technology_card.jpeg"
@@ -57,62 +73,73 @@
                   alt="New Technology Card"
                 />
             </article>
-            <article class="content-card">
+            <article class="content-card" id="card-3">
+                <div class="hashtags" id="hashtag-3">
+                <p>#AIvideos</p>
+                </div>
+                <div class="card-text">
                 <h3>Video Resources</h3>
                 <p>Watch and learn with our collection of informative videos that showcase AI's impact on various aspects of dentistry, from patient care to practice management.</p>
+                </div>
                 <img
                   loading="lazy"
                   src="./assets/images/home_images/video_card_image.jpeg"
                   class="card-image"
                   alt="Video Card Image"
                 />
-                <img
-                  loading="lazy"
-                  src="assets/images/home_images/Logo_inactive.png"
-                  class="logo-image"
-                  alt="Logo"
-                />
             </article>
+          </div>
         </section>
+       
         <section class="newsletter-section">
+            <div class="subscribe-text">
             <h2>Subscribe to Periospot AI Newsletter</h2>
             <p>The monthly Newsletter to keep you updated with news and reviews about the latest trends in AI Dentistry.</p>
+            </div>
+            <div class="subscriber-cta">
             <form class="newsletter-form">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email">
-                <input type="submit" value="Subscribe">
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                <button type="submit" value="Subscribe">Subscribe</button>
             </form>
+            </div>
         </section>
     </main>
     <footer class="site-footer">
-        <div class="footer-section">
+        <div class="logo-and-periospot">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/cad3dff6521b7c419329049fd2ad10bdfceb994fc4e9388fe59134ad8b27e640?apiKey=f0812a04297043fabe63801e81ab6c6c&"
               class="footer-logo"
               alt="Periospot AI"
             />
-            <ul class="footer-navigation">
+            <h2>Periospot AI</h2>
+          </div>
+          <div class="footer-links">
+          <div class="footer-section site-map">
+            <h3>Site:</h3>
+            <ul class="footer-section navigation">
                 <li>Home</li>
                 <li>Featured Content</li>
                 <li>About us & Contact</li>
             </ul>
-        </div>
-        <div class="footer-section">
-            <h4>More Resources:</h4>
+          </div>
+        
+        <div class="footer-section resources">
+            <h3>More Resources:</h3>
             <ul class="footer-resources">
                 <li>GitHub</li>
                 <li>Dev</li>
             </ul>
         </div>
-        <div class="footer-section">
-            <h4>Contact:</h4>
+        <div class="footer-section contact">
+            <h3>Contact:</h3>
             <ul class="footer-contacts">
                 <li>X</li>
                 <li>Linkedin</li>
                 <li>Facebook</li>
             </ul>
         </div>
+      </div>
     </footer>
 </body>
       
