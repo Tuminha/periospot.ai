@@ -1,0 +1,110 @@
+/* Site Styhttps://file+.vscode-resource.vscode-cdn.net/Users/franciscoteixeirabarbosa/Downloads/Screenshot%202023-12-22%20at%2020.38.10.png?version%3D1703275551897lesheet
+   1. Root Variables
+   2. Global Styles
+   3. Typography Styles
+   4. Structure Styles
+   5. Module Styles
+   6. Component Styles
+   7. Page Styles
+====================================== */
+
+/* Root Variables
+====================================== */
+:root {
+  /* Color Variables */
+  --soft-grey: #ECECEC;
+  --vivid-yellow: #F1AC3C;
+  --vivid-red: #E01D1F;
+  --vivid-blue: #086CC1;
+  --black: #000000;
+  --white: #FFFFFF;
+  --dark-blue: #0E1E1E;
+  --extra-dark-grey: #242424;
+
+  /* Font Size Variables */
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.6rem;
+  --font-size-h4: 1.2rem;
+  --font-size-paragraph: 1rem;
+  --font-size-paragraph-light: 0.8rem;
+  --font-size-nav-hover: 1.625rem;
+
+  /* Font Family Variables */
+  --font-family-primary: 'Darker Grotesque', sans-serif;
+
+ }
+
+/* Global Styles
+====================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family-primary);
+  color: var(--black);
+  background-color: var(--soft-grey);
+}
+
+/* Typography Styles
+====================================== */
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700; /* Assuming 700 is Extra Bold */
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 600; /* Assuming 600 is Bold */
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 500; /* Assuming 500 is Medium */
+}
+
+
+
+/* Component Styles - Example with Buttons
+====================================== */
+.button {
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--vivid-yellow);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--vivid-red);
+}
+
+/* ... Additional component styles */
+
+/* Page Specific Styles - Example for Home Page
+====================================== */
+.home-banner {
+  background-color: var(--soft-grey);
+  color: var(--black);
+  padding: 20px;
+  text-align: center;
+}
+
+/* ... Additional page-specific styles */
+
