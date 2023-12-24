@@ -74,32 +74,32 @@ body {
 ====================================== */
 h1 {
   font-size: var(--font-size-h1);
-  font-weight: 700; /* Assuming 700 is Extra Bold */
+  font-weight: 700; 
 }
 
 h2 {
   font-size: var(--font-size-h2);
-  font-weight: 600; /* Assuming 600 is Bold */
+  font-weight: 600; 
 }
 
 h3 {
   font-size: var(--font-size-h3);
-  font-weight: 500; /* Assuming 500 is Medium */
+  font-weight: 500; 
 }
 
 h4 {
   font-size: var(--font-size-h4);
-  font-weight: 400; /* Assuming 400 is Regular */
+  font-weight: 400; 
 }
 
 p {
   font-size: var(--font-size-paragraph);
-  font-weight: 400; /* Assuming 400 is Regular */
+  font-weight: 400; 
 }
 
 li {
   font-size: var(--font-size-h3);
-  font-weight: var( --font-weight-bold); /* Assuming 400 is Regular */
+  font-weight: var( --font-weight-bold); 
 }
 
 
@@ -128,7 +128,33 @@ li {
 
 
 .button:hover {
-  background-color: var(--vivid-red);
+  background-color: var(--vivid-yellow);
+  color: var(--black);
+}
+
+
+/* Logo animation styles */
+
+.logo-image {
+  width: 80px; 
+  height: 80px; 
+  background-image: url('../images/home_images/Logo_inactive.png');
+  background-size: cover;
+}
+
+.logo-image:hover {
+  background-image: url('../images/home_images/Logo_hover.png');
+}
+
+.logo-image-footer {
+  width: 80px; 
+  height: 80px; 
+  background-image: url('../images/home_images/Logo_inactive.png');
+  background-size: cover;
+}
+
+.logo-image-footer:hover {
+  background-image: url('../images/home_images/Logo_Hover_footer.png');
 }
 
 /* Nav Styles */
@@ -260,6 +286,11 @@ li {
   height: 300px;
   border-radius: 12px;
   background: var(--white);
+  color: var(--white);
+}
+
+.content-card:hover {
+  color: var(--black);
 }
 
 #card-1 {
@@ -297,11 +328,12 @@ li {
   border-radius: 25px;
   margin: 20px 0px 0px 20px;
   background-color: var(--white);
+  color: var(--black);
   
 }
 
 #card-1:hover #hashtag-1 {
-  background-color: var(--vivid-blue);
+  background-color: var(--vivid-yellow);
   color: var(--white);
 }
 
@@ -311,7 +343,7 @@ li {
 }
 
 #card-3:hover #hashtag-3 {
-  background-color: var(--vivid-yellow);
+  background-color: var(--vivid-blue);
   color: var(--white);
 }
 
@@ -418,14 +450,15 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 20px;
   margin-top: 40px;
+  color: var(--white);
 }
 
 .footer-links {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -448,3 +481,13 @@ footer h3 {
   color: var(--soft-grey);
 }
 
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-links li:hover {
+    font-size: var(--font-size-paragraph);
+    text-decoration: underline;
+    font-weight: var(--font-weight-extrabold);
+}
