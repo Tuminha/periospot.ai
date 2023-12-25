@@ -279,7 +279,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 
 
 }
@@ -297,13 +297,14 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: left;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   width: 30%;
-  height: 300px;
   border-radius: 12px;
   background: var(--white);
   color: var(--white);
+  flex: 1;
+  margin: 20px;
 }
 
 .content-card:hover {
@@ -445,6 +446,25 @@ li {
   height: auto;
   font-size: var(--font-size-h2);
   padding: 10px 0px;
+
+}
+
+.contact-form-button {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--vivid-yellow);
+  color: var(--black);
+  font-size: var(--font-size-h2);
+  margin-top: 10px;
+  border-style: none;
+  height: auto;
+  font-size: var(--font-size-h2);
+  padding: 10px 0px;
+
 
 }
 
@@ -695,4 +715,194 @@ footer h3 {
 
 .card-item:nth-child(4) {
   border-radius: 0px 12px 12px 0px;
+}
+
+/* About Page Styles */
+
+.about-us-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 0px 122px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+
+}
+
+.profile-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 25px 50px;
+  background-color: var(--card-featured-grey);
+  margin: 50px 122px;
+  border-radius: 12px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 57px;
+  width: 100%;
+  height: auto;
+}
+
+.profile-image {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-size: fill;
+  background-position: center;
+
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.profile-image-and-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  height: auto;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.profile-name {
+  font-size: var(--font-size-h3);
+  color: var(--vivid-blue);
+}
+
+.profile-title {
+  font-size: var(--font-size-h4);
+  color: var(--black);
+  font-weight: var(--font-weight-bold);
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  gap: 20px;
+  height: auto;
+  padding: 50px 122px;
+  width: 100%;
+  
+}
+
+.contact-form-inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-between;
+  gap: 80px;
+  width: 100%;
+  height: auto;
+  background-color: var(--card-featured-grey);
+  border-radius: 12px;
+  padding: 50px 50px;
+}
+
+.contact-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+
+}
+
+.contact-form,
+.contact-form-textarea,
+.contact-form-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.input-text,
+.contact-form-textarea,
+.contact-form-dropdown
+.contact-form select.input-text {
+  padding: 0px 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid;
+  border-color: #086cc1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+  line-height: var(--font-size-h3);
+  box-sizing: border-box;
+}
+
+
+
+.contact-form-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('dropdown-arrow.png') no-repeat right #ffffff;
+  background-position-x: 95%;
+}
+
+.contact-form-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  height: 40px;
 }
