@@ -179,6 +179,13 @@ li {
   flex: 1 0 0;
 }
 
+.navigation-list a {
+  font-size: var(--font-size-nav-hover);
+  font-weight: var(--font-weight-bold);
+  color: var(--black);
+  text-decoration: none;
+}
+
 .navigation-list li {
   list-style: none;
   margin: 0;
@@ -668,6 +675,24 @@ footer h3 {
   margin-top: 50px;
 }
 
+.card-item:hover .number-yellow {
+  background-color: var(--vivid-yellow);
+}
+
+.card-item:hover .number-red {
+  background-color: var(--vivid-red);
+}
+
+.card-item:hover .number-blue {
+  background-color: var(--vivid-blue);
+}
+
 .card-item:hover {
   background-color: var(--white);
+}
+
+/*targeting the 4th card item to remove the border radius on the bottom and upper right corner */
+
+.card-item:nth-child(4) {
+  border-radius: 0px 12px 12px 0px;
 }
