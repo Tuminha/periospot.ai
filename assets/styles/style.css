@@ -508,9 +508,9 @@ footer h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
   width: 100%;
   height: auto;
+  margin: 25px;
 }
 
 .three-cards-container {
@@ -521,6 +521,7 @@ footer h3 {
   gap: 50px;
   width: 100%;
   height: auto;
+  margin: 50px 0 100px 0;
 
 }
 
@@ -533,13 +534,64 @@ footer h3 {
   padding: 0px 122px;
 }
 
+.cards-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research {
+  display: flex;
+  background-image: url(../images/featured_content_images/Research_logo.png);
+  background-size: auto;
+  background-position: center;
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.technology {
+  display: flex;
+  background-image: url(../images/featured_content_images/Technology_logo.png);
+  background-size: auto;
+  background-position: center;
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.video {
+  display: flex;
+  background-image: url(../images/featured_content_images/Video_logo.png);
+  background-size: auto;
+  background-position: center;
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+}
+
 .card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: left;
   width: 100%;
-  height: 300px;
+  height: auto;
   border-radius: 12px;
 }
 
@@ -548,8 +600,9 @@ footer h3 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 300px;
-  border-radius: 12px 0 0 12px
+  height: auto;
+  border-radius: 12px 0 0 12px;
+  color: var(--white);
 }
 
 .card-items {
@@ -558,7 +611,7 @@ footer h3 {
   align-items: space-between;
   justify-content: space-between;
   width: 100%;
-  height: 300px;
+  height: auto;
   border-radius: 12px;
   
 }
@@ -567,12 +620,12 @@ footer h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   border: 1px solid var(--black);
-  padding: 0px 24px;
+  padding: 24px 24px;
   background-color: var(--card-featured-grey);
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 
 }
 
@@ -597,9 +650,9 @@ footer h3 {
   color: var(--black);
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 50px;
   height: 50px;
-  align-items: center;
   border-radius: 50px;
   background: #B8B2B2;
 }
@@ -612,4 +665,9 @@ footer h3 {
   gap: 10px;
   width: 100%;
   height: auto;
+  margin-top: 50px;
+}
+
+.card-item:hover {
+  background-color: var(--white);
 }
