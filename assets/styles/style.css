@@ -257,7 +257,7 @@ li {
   width: 100%;
   flex-direction: column;
   gap: 100px;
-  height: 700px;
+  height: 100%;
   padding: 0px 122px;
 
 }
@@ -280,6 +280,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
 
 
 }
@@ -305,6 +306,11 @@ li {
   color: var(--white);
   flex: 1;
   margin: 20px;
+}
+
+.card-image-container {
+  margin-top: auto; 
+
 }
 
 .content-card:hover {
@@ -701,10 +707,12 @@ footer h3 {
 
 .card-item:hover .number-red {
   background-color: var(--vivid-red);
+  color: var(--white);
 }
 
 .card-item:hover .number-blue {
   background-color: var(--vivid-blue);
+  color: var(--white);
 }
 
 .card-item:hover {
@@ -907,6 +915,107 @@ footer h3 {
   height: 40px;
 }
 
+
+/* Media queries for tablet responsiveness index.html. Cards section should be stacked vertically. Tablet screen 768px*/
+
+@media only screen and (max-width: 768px) {
+
+  .main-navigation {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 22px 22px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 55px;
+    align-content: center;
+    justify-content: flex-start;
+  }
+
+.intro-text {
+    position: absolute;
+    top: 237px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 22px 20px;
+    margin-left: 0px;
+  }
+
+  .line-break {
+    display: flex;
+    width: auto;
+    height: 1px;
+    background-color: var(--vivid-blue);
+    margin: 10px 22px;
+  }
+
+  .featured-content-cards-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    padding: 22px 22px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 0px 100px 0px;
+}
+
+  .content-card {
+    margin: 10px;
+  }
+
+  .newsletter-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    width: 100%;
+    height: auto;
+    background-color: var(--extra-dark-grey);
+    padding: 30px 50px;
+  }
+
+  footer {
+    padding: 22px 22px;
+    font-size: var(--font-size-paragraph);
+  }
+
+  footer h2 {
+    font-size: var(--font-size-h3);
+  }
+
+  footer h3 {
+    font-size: var(--font-size-h4);
+  }
+
+  footer h4 {
+    font-size: var(--font-size-h5);
+  }
+
+  footer h5 {
+    font-size: var(--font-size-h6);
+  }
+
+  footer h6 {
+    font-size: var(--font-size-paragraph);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+  }
+
+}
+
+
 /* Media queries for mobile phone responsiveness index.html. Cards section should be stacked vertically. Mobile screen 375px*/
 
 @media only screen and (max-width: 375px) {
@@ -1091,5 +1200,3 @@ footer h3 {
     margin-bottom: 20px;
 }
   }
-
-}
