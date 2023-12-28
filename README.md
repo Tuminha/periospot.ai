@@ -8,36 +8,36 @@ Developer: Francisco Teixeira Barbosa
 
 ## Table of Content
 
-1. Project Goals
-   - User Goals
-   - Site Owner Goals
-2. User Experience
-   - Target Audience
-   - User Requirements and Expectations
-   - User Stories
-3. Design
-   - Design Choices
-   - Colour
-   - Fonts
-   - Structure
-   - Wireframes
-   - Prototype
-4. Technologies Used
-   - Languages
-   - Frameworks & Tools
-5. Features
-6. Testing
-   - HTML Validation
-   - CSS Validation
-   - Accessibility
-   - Performance
-   - Device testing
-   - Browser compatibility
-   - Testing user stories
-7. Bugs
-8. Deployment
-9. Credits
-10. Acknowledgements
+[1. Project Goals](#1-project-goals)
+   - [User Goals](#user-goals)
+   - [Site Owner Goals](#site-owner-goals)
+[2. User Experience](#2-user-experience)
+   - [Target Audience](#target-audience)
+   - [User Requirements and Expectations](#user-requirements-and-expectations)
+   - [User Stories](#user-stories)
+[3. Design](#3-design)
+   - [Design Choices](#design-choices)
+   - [Colour](#colour)
+   - [Fonts](#fonts)
+   - [Structure](#structure)
+   - [Wireframes](#wireframes)
+   - [Prototype](#prototype)
+[4. Technologies Used](#4-technologies-used)
+   - [Languages](#languages)
+   - [Frameworks & Tools](#frameworks--tools)
+[5. Features](#5-features)
+[6. Testing](#6-testing)
+   - [HTML Validation](#html-validation)
+   - [CSS Validation](#css-validation)
+   - [Accessibility](#accessibility)
+   - [Performance](#performance)
+   - [Device testing](#device-testing)
+   - [Browser compatibility](#browser-compatibility)
+   - [Testing user stories](#testing-user-stories)
+[7. Bugs](#7-bugs)
+[8. Deployment](#8-deployment)
+[9. Credits](#9-credits)
+[10. Acknowledgements](#10-acknowledgements)
 
 ## 1. Project Goals
 
