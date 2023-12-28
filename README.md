@@ -285,3 +285,146 @@ The accessibility of the website was validated using the [WAVE WebAIM web access
 **Featured Content Page:** ![Featured Content Page validation](docs/README_Images/validation/wave-validation_featured.png)
 
 **About Us & Contact Page:** ![About Us & Contact Page validation](docs/README_Images/validation/Wave_validation_contact.png)
+
+### Performance
+
+Chapter 1: The Wake-Up Call
+
+The initial Lighthouse report delivered a stark reality: the Periospot AI homepage was underperforming, with a score of 70 in Performance. The primary culprit? Oversized images that were bulky, slowing down page loads and affecting user experience negatively.
+
+![Initial Lighthouse Report](docs/README_Images/validation/Lighthouse/lighthouse_home.png)
+
+Chapter 2: The Optimization Quest
+
+The journey began with resizing images, converting them to more efficient formats like WebP using the cwebp tool. This crucial step reduced bytes and improved loading times dramatically, exemplified by the significant decrease in the potential savings after the conversion.
+
+![Image Optimization](docs/README_Images/validation/Lighthouse/issues1.png)
+
+Chapter 3: The Rise in Performance
+
+The featured content page's performance soared to a 93 score after the image optimizations. Larger Contentful Paint and Cumulative Layout Shift numbers indicated that the website was becoming more responsive and visually stable.
+
+![Featured Page Performance](docs/README_Images/validation/Lighthouse/Lighthouse_featured.png)
+
+Chapter 4: Tackling the Core Issues
+
+Next, the focus turned to render-blocking resources and inefficient cache policies. Refinements were made to the site's cache-loading strategies, along with adjustments to how resources were loaded and scripts were deferred, leading to an even smoother user experience.
+
+![Core Issues](docs/README_Images/validation/Lighthouse/issues2.png)
+
+Chapter 5: The Final Frontier
+
+The contact page faced its own set of challenges, from lazy-loaded images to cache policy inefficiencies. But with diligent application of best practices, the page performance experienced an uptick, moving closer to perfection.
+
+![Contact Page Performance](docs/README_Images/validation/Lighthouse/Lighthousecontactsok.png)
+
+Epilogue: A Speedier Web Experience
+
+As the curtain falls on this optimization odyssey, the Periospot AI website emerges leaner and faster. The final Lighthouse reports glow green with scores in the high 90s, a testament to the meticulous efforts in performance enhancement.
+
+![Final Lighthouse Report](docs/README_Images/validation/Lighthouse/Screenshot 2023-12-28 at 19.43.21.png)
+
+Also this is the performance per page with the screenshots of the Lighthouse report:
+
+**Home Page:** ![Home Page performance](docs/README_Images/validation/Lighthouse/lighthouse_home.png)
+
+**Featured Content Page:** ![Featured Content Page performance](docs/README_Images/validation/Lighthouse/Lighthouse_featured.png)
+
+**About Us & Contact Page:** ![About Us & Contact Page performance](docs/README_Images/validation/Lighthouse/Lighthousecontactsok.png)
+
+### Device Testing
+
+### Testing User Stories
+
+#### As a first-time user, I want to understand the purpose of the website
+
+Feature | Action | Expected Result | Actual Result
+--- | --- | --- | ---
+Home Page | Navigate to the Home Page | Understand the purpose of the website through the hero section and introductory text | Works as expected
+About Us & Contact Page | Navigate to the About Us & Contact Page | Learn more about the team behind the website and their mission | Works as expected
+
+#### As a first-time user, I want to explore the featured content
+
+Feature | Action | Expected Result | Actual Result
+--- | --- | --- | ---
+Featured Content Page | Navigate to the Featured Content Page | See a grid layout of articles and resources on various topics | Works as expected
+
+#### As a returning user, I want to subscribe to the newsletter
+
+Feature | Action | Expected Result | Actual Result
+--- | --- | --- | ---
+Newsletter Subscription | Locate the newsletter subscription form on different pages and submit it | Stay updated with the latest content and news from the website | Works as expected
+
+#### As a returning user, I want to contact the team
+
+Feature | Action | Expected Result | Actual Result
+--- | --- | --- | ---
+Contact Us Form | Navigate to the About Us & Contact Page, locate the contact form, fill it out and submit it | Send inquiries or messages to the team | Works as expected
+
+#### As the site owner, I want to engage users with interactive and informative content
+
+Feature | Action | Expected Result | Actual Result
+--- | --- | --- | ---
+Home Page | Check the Home Page | See a dynamic hero section and curated featured content that showcases the latest studies and innovations | Works as expected
+Featured Content Page | Check the Featured Content Page | See a grid of cards, each a portal to detailed articles and resources | Works as expected
+About Us & Contact Page | Check the About Us & Contact Page | See professional profiles of the team and an interactive contact form | Works as expected
+
+# Bugs and Future Implementations
+
+Bug / Future Implementation | Description
+--- | ---
+Missing server.js file | Initially, we were trying to run a server.js file that didn't exist in our project directory. This was causing Node.js to throw a MODULE_NOT_FOUND error. We identified this issue and advised to create a server.js file.
+MailerLite integration | We were trying to integrate MailerLite into our project for handling newsletter subscriptions. We provided a basic example of how we could set up a server-side script to handle POST requests from our client-side script and interact with the MailerLite API.
+Server not starting | After setting up the server.js file and .env file, we tried to start our server with the node server.js command, but didn't see the expected output ("Server running on port 3000"). We suggested several things to check, including the location of our .env file, the format of our environment variables, and the installation of necessary Node.js packages.
+MailerLite implementation | Despite our efforts, we were not able to solve the issue with starting the server. This could be due to a variety of factors, such as a problem with our Node.js installation, a misconfiguration in our system, or an issue with the MailerLite API key or group ID. Without more information, it's difficult to determine the exact cause of the problem. We decided to fake the success in subscription for now and leave the full MailerLite implementation to the next stage of our project.
+
+
+## 8. Deployment
+
+The website was deployed using GitHub Pages by following these steps:
+
+- In the GitHub repository navigate to the Settings tab
+- On the left hand menu select Pages
+- For the source select Branch: master
+- After the webpage refreshes automatically you will see a ribbon on the top saying: "Your site is published at https://tuminha.github.io/periospot.ai/"
+
+You can fork the repository by following these steps:
+
+- Go to the GitHub repository
+- Click on Fork button in upper right hand corner
+
+You can clone the repository by following these steps:
+
+- Go to the GitHub repository
+- Locate the Code button above the list of files and click it
+- Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+- Open Git Bash
+- Change the current working directory to the one where you want the cloned directory
+- Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+- Press Enter to create your local clone.
+
+Live site is at https://tuminha.github.io/periospot.ai/index.html
+
+Repo is at https://github.com/Tuminha/periospot.ai
+
+## 9. Credits
+
+### Content
+
+Most of the illustrations from the hero image were retrieved from the community in Figma. Also, the other images are from Adobe Stock Photo, and some of the illustrations are created by the creator and the developer. The following resources were also used:
+
+- Udemy course on Figma management: [Figma UI UX Design Advanced Tutorial](https://www.udemy.com/course/figma-ui-ux-design-advanced-tutorial/learn/lecture/38955510#overview)
+- Lessons from [FreeCodeCamp](https://www.freecodecamp.com)
+- CSS tricks from CodeCamp
+- Learnings from the [Twitter Developer Community](https://twitter.com/developer)
+- Design and color palette inspiration from [Baunhaus](https://www.behance.net/gallery/177076455/BAUHAUS-App-Branding?log_shim_removal=1)
+- Inspiration from [Dribbble](https://dribbble.com/)
+- Website design inspiration from [Awwwards](https://www.awwwards.com/websites/)
+
+### Acknowledgements
+
+- A big thank you to my mentor Mo Shami for his guidance and support throughout this project. He gave me some last minute insights that literally took me out of my negative spiral and helped me to finish the project.
+
+- tahnk you to my family, my five kids and my wife for their support and patience during this journey.
+
+- Also the amazing tema on Code Institute Student care for their support and help during this journey.
