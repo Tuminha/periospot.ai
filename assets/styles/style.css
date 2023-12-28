@@ -137,10 +137,12 @@ li {
 /* Logo animation styles */
 
 .logo-image {
-  width: 80px; 
-  height: 80px; 
-  background-image: url('../images/home_images/Logo_inactive.png');
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/home_images/Logo_inactive.png);
   background-size: cover;
+  display: flex;
+  position: relative;
 }
 
 .logo-image:hover {
@@ -197,6 +199,18 @@ li {
   text-decoration: underline;
   font-weight: var(--font-weight-bold);
 }
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Style the hamburger menu label */
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+
 
 
 
@@ -1091,6 +1105,11 @@ footer h3 {
 
 @media only screen and (max-width: 375px) {
 
+    .site-header {
+    display: flex;
+    flex-direction: column;
+  }
+
   .main-navigation {
     display: flex;
     width: auto;
@@ -1104,16 +1123,95 @@ footer h3 {
     justify-content: flex-start;
   }
 
-.intro-text {
+  .main-navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-navigation a {
+    font-size: var(--font-size-h4);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    order: 3;
+  }
+
+  .logo-image {
     position: absolute;
-    top: 237px;
-    max-width: 500px;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    order: 1;
+  }
+
+  .hamburger-menu {
+    font-size: 30px; 
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    display: block; 
+    z-index: 100; 
+    order: 2;
+  }
+
+  .line-break {
+    order: 4;
+  }
+
+  #menu-toggle:checked ~ .main-navigation {
+    display: flex; /* Show the menu when the checkbox is checked */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .navigation-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px 20px;
-    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+  
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+  }
+
+
+.intro-text {
+  position: relative;
+  top: 100px;
+  max-width: 400px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 20px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  }
+
+  .intro-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0px 0px 20px 0px;
   }
 
 
@@ -1269,4 +1367,69 @@ footer h3 {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 57px;
+    width: 100%;
+    height: auto;
   }
+
+  .contact-form-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+    height: auto;
+    background-color: var(--card-featured-grey);
+    border-radius: 12px;
+    padding: 50px 50px;
+  }
+
+  /* Featured Content Section */
+
+  .card-items {
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+  }
+
+  #research-header {
+    border-radius: 12px 12px 0 0;
+  }
+
+  #ai-tech-header {
+    border-radius: 12px 12px 0 0;
+  }
+
+  #video-resources-header {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .card-item:nth-child(4) {
+    border-radius: 0px 0px 12px 12px;
+  }
+
+  .card-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+
+
+}
