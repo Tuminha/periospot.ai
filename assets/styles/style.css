@@ -698,12 +698,14 @@ footer h3 {
 .card-items {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: stretch;
+  justify-content: center;
   width: 100%;
   height: auto;
   border-radius: 12px;
-  
+  flex-wrap: nowrap;
+  align-content: flex-start;
+ 
 }
 
 .card-item {
