@@ -356,6 +356,17 @@ li {
 
 }
 
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+}
+
 .content-card:hover {
   color: var(--black);
   text-decoration: none;
@@ -418,10 +429,13 @@ li {
   color: var(--white);
 }
 
-.card-text {
-  width: 100%;
-  padding: 0px 20px;
+#card-1 {
+  color: var(--black);
 }
+
+/* First card text in black. First child*/
+
+
 
 .newsletter-section {
   display: flex;
