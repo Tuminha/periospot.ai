@@ -6,42 +6,71 @@ Developer: Francisco Teixeira Barbosa
 
 [Link to the live webpage](https://tuminha.github.io/periospot.ai/)
 
-## Table of Content
+## Table of Contents
 
-[1. Project Goals](#1-project-goals)
-   - [User Goals](#user-goals)
-   - [Site Owner Goals](#site-owner-goals)
-[2. User Experience](#2-user-experience)
-   - [Target Audience](#target-audience)
-   - [User Requirements and Expectations](#user-requirements-and-expectations)
-   - [User Stories](#user-stories)
-[3. Design](#3-design)
-   - [Design Choices](#design-choices)
-   - [Colour](#colour)
-   - [Fonts](#fonts)
-   - [Structure](#structure)
-   - [Wireframes](#wireframes)
-   - [Prototype](#prototype)
-[4. Technologies Used](#4-technologies-used)
-   - [Languages](#languages)
-   - [Frameworks & Tools](#frameworks--tools)
-[5. Features](#5-features)
-[6. Testing](#6-testing)
-   - [HTML Validation](#html-validation)
-   - [CSS Validation](#css-validation)
-   - [Accessibility](#accessibility)
-   - [Performance](#performance)
-   - [Device testing](#device-testing)
-   - [Browser compatibility](#browser-compatibility)
-   - [Testing user stories](#testing-user-stories)
-[7. Bugs](#7-bugs)
-[8. Deployment](#8-deployment)
-[9. Credits](#9-credits)
-[10. Acknowledgements](#10-acknowledgements)
+## [Project Goals](#1-project-goals)
+
+   1.1 [User Goals](#user-goals)
+
+   1.2 [Site Owner Goals](#site-owner-goals)
+
+## [User Experience](#2-user-experience)
+
+   2.1 [Target Audience](#target-audience)
+
+   2.2 [User Requirements and Expectations](#user-requirements-and-expectations)
+
+   2.3 [User Stories](#user-stories)
+
+## [Design](#3-design)
+
+   3.1 [Design Choices](#design-choices)
+
+   3.2 [Colour](#colour)
+
+   3.3 [Fonts](#fonts)
+
+   3.4 [Structure](#structure)
+
+   3.5 [Wireframes](#wireframes)
+
+   3.6 [Prototype](#prototype)
+
+## [Technologies Used](#4-technologies-used)
+
+   4.1 [Languages](#languages)
+
+   4.2 [Frameworks & Tools](#frameworks--tools)
+
+## [Features](#5-features)
+
+## [Testing](#6-testing)
+
+   6.1 [HTML Validation](#html-validation)
+
+   6.2 [CSS Validation](#css-validation)
+
+   6.3 [Accessibility](#accessibility)
+
+   6.4 [Performance](#performance)
+
+   6.5 [Device testing](#device-testing)
+
+   6.6 [Browser compatibility](#browser-compatibility)
+
+   6.7 [Testing user stories](#testing-user-stories)
+
+## [Bugs](#7-bugs)
+
+## [Deployment](#8-deployment)
+
+## [Credits](#9-credits)
+
+## [Acknowledgements](#10-acknowledgements)
 
 ## 1. Project Goals
 
-### User Goals
+### 1.1 User Goals
 
 The primary objectives of Periospot.ai for its users, specifically dentists, are as follows:
 
@@ -49,7 +78,7 @@ The primary objectives of Periospot.ai for its users, specifically dentists, are
 - To keep users updated with the latest research and videos on the topic.
 - To offer curated content about the latest AI technologies applied to dentistry.
 
-### Site Owner Goals
+### 1.2 Site Owner Goals
 
 The primary objectives of Periospot.ai for site owners are as follows:
 
@@ -59,11 +88,11 @@ The primary objectives of Periospot.ai for site owners are as follows:
 
 ## 2. User Experience
 
-### Target Audience
+### 2.1 Target Audience
 
 The target audience for Periospot.ai is dentists and dental professionals who are interested in AI technology and its application in dentistry.
 
-### User Requirements and Expectations
+### 2.2 User Requirements and Expectations
 
 Periospot.ai is designed with the user in mind. The navigation is intuitive and straightforward, allowing users to easily find the information they need. The site's aesthetic is modern and professional, reflecting the cutting-edge nature of AI technology in dentistry. Real-time information is provided to keep users up-to-date with the latest developments in the field.
 
@@ -71,7 +100,7 @@ Interaction with the site managers is facilitated through a direct and user-frie
 
 The content is organized into clear, distinct sections, making it easy for users to locate specific topics or areas of interest. Each section is filled with carefully curated content, providing users with a wealth of knowledge at their fingertips.
 
-### User Stories
+### 2.3 User Stories
 
 #### First time user
 
@@ -103,10 +132,10 @@ The wireframes for the website can be viewed on Figma at the following link: [Pe
 
 You can view the high fidelity prototype of the website on Figma at the following link: [Periospot.ai Prototype](https://www.figma.com/file/emTdZt9i4LSO60OQ3TyYZr/Periospot.ai?type=design&node-id=7%3A506&mode=design&t=v1InG5IObQFhxC4S-1)
 
-### Design Philosophy
+### 3.1 Design Philosophy
 The design of Periospot AI’s web platform is conceptualized to navigate the intersection of technology and dentistry. It is crafted to be as innovative and forward-thinking as the field it represents, aiming to offer insightful and actionable content through an interface that feels both intuitive and enlightening.
 
-### Colour Scheme
+### 3.2 Colour Scheme
 The colour palette for Periospot AI is carefully chosen to reflect the vibrancy and diversity of AI technology in dentistry. We have selected a combination of vivid and soft tones to create a balance between excitement and sophistication. This includes:
 
 - Dark-grey (#0D0D0D) for a strong, authoritative background in sections like the subscription area.
@@ -117,7 +146,7 @@ These colours are not only aesthetically pleasing but also pass accessibility st
 
 ![Colour Palette](docs/README_Images/Color_Pallete.png)
 
-### Typography
+### 3.3 Typography
 Our typography choices are intended to merge clarity with personality. We use the 'Darker Grotesque' font family, a modern and versatile typeface that scales beautifully across devices. The varying weights from light to bold are utilized to create a hierarchy of information and draw attention to different sections of the content.
 
 - Headings are bold and assertive, with 'Darker Grotesque Extra Bold' for primary headings to anchor each section with confidence.
