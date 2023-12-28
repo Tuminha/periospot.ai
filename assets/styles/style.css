@@ -165,14 +165,16 @@ li {
 .logo-image {
   width: 80px;
   height: 80px;
-  background-image: url(../images/home_images/Logo_inactive.png);
+  
+  background-image: url('../images/home_images/Logo_hover.png');
   background-size: cover;
   display: flex;
   position: relative;
 }
 
 .logo-image:hover {
-  background-image: url('../images/home_images/Logo_hover.png');
+  background-image: url(../images/home_images/Logo_inactive.png);
+  
 }
 
 .logo-image-footer {
@@ -696,7 +698,7 @@ footer h3 {
 .card-items {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   height: auto;
@@ -833,7 +835,7 @@ footer h3 {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  background-size: fill;
+  background-size: cover;
   background-position: center;
 
 }
@@ -1437,7 +1439,7 @@ footer h3 {
   .card-items {
       display: flex;
       flex-direction: column;
-      align-items: space-between;
+      align-items: center;
       justify-content: space-between;
       width: 100%;
       height: auto;
