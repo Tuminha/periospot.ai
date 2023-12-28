@@ -276,3 +276,12 @@ The CSS file was validated using the [W3C CSS Validation Service](https://jigsaw
 
 **style.css:** ![style.css validation](docs/README_Images/validation/css_validation.png)
 
+### Accessibility Validation
+
+The accessibility of the website was validated using the [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/). All pages were tested and passed with 0 errors. Here are the validation results for each page:
+
+**Home Page:** ![Home Page validation](docs/README_Images/validation/wave_validation_home.png)
+
+**Featured Content Page:** ![Featured Content Page validation](docs/README_Images/validation/wave-validation_featured.png)
+
+**About Us & Contact Page:** ![About Us & Contact Page validation](docs/README_Images/validation/Wave_validation_contact.png)
