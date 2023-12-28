@@ -133,6 +133,32 @@ li {
   color: var(--black);
 }
 
+.contact-form-button {
+  display: inline-block;
+  background: var(--vivid-blue);
+  color: var(--white);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.contact-form-button:hover {
+  background-color: var(--vivid-blue);
+  color: var(--white);
+}
+
+
+
+.newsletter-form button:hover {
+  background-color: var(--vivid-yellow);
+  cursor: pointer;
+}
 
 /* Logo animation styles */
 
@@ -320,6 +346,7 @@ li {
   color: var(--white);
   flex: 1;
   margin: 20px;
+  text-decoration: none;
 }
 
 .card-image-container {
@@ -329,18 +356,22 @@ li {
 
 .content-card:hover {
   color: var(--black);
+  text-decoration: none;
 }
 
 #card-1 {
   background-color: var(--vivid-yellow);
+  cursor: pointer;
 }
 
 #card-2 {
   background-color: var(--vivid-red);
+  cursor: pointer;
 }
 
 #card-3 {
   background-color: var(--vivid-blue);
+  cursor: pointer;
 }
 
 #card-1:hover, #card-2:hover, #card-3:hover {
@@ -468,6 +499,16 @@ li {
   padding: 10px 0px;
 
 }
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+} 
 
 .contact-form-button {
   display: flex;

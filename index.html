@@ -30,7 +30,7 @@
           <div class="intro-text">
             <h1>Learning AI in Dentistry</h1>
             <h3>Navigate the intersection of technology and dentistry with our expert-curated insights and articles.</h3>
-            <button class="button">Get Started</button>
+            <a href="featured.html" class="button" style="text-decoration: none;">Get Started</a>
           </div>
             <img
               loading="lazy"
@@ -44,7 +44,7 @@
             <h2>Curated Featured Content</h2>
             </div>
             <div class="featured-content-cards-container">
-            <article class="content-card" id="card-1">
+            <a href="featured.html" class="content-card" id="card-1">
                 <div class="hashtags" id="hashtag-1">
                 <p>#Scientific</p>
                 </div>
@@ -60,8 +60,8 @@
                   alt="Scientific Research Card"
                 />
               </div>
-            </article>
-            <article class="content-card" id="card-2">
+            </a>
+            <a href="featured.html" class="content-card" id="card-2">
                 <div class="hashtags" id="hashtag-2">
                 <p>#AITechnology</p>
                 </div>
@@ -77,8 +77,8 @@
                   alt="New Technology Card"
                 />
               </div>
-            </article>
-            <article class="content-card" id="card-3">
+            </a>
+            <a href="featured.html" class="content-card" id="card-3">
                 <div class="hashtags" id="hashtag-3">
                 <p>#AIvideos</p>
                 </div>
@@ -94,7 +94,7 @@
                   alt="Video Card Image"
                 />
               </div>
-            </article>
+            </a>
           </div>
         </section>
        
@@ -104,9 +104,10 @@
             <p>The monthly Newsletter to keep you updated with news and reviews about the latest trends in AI Dentistry.</p>
             </div>
             <div class="subscriber-cta">
-            <form class="newsletter-form">
-                <input type="email" id="email" name="email" placeholder="Your Email">
+              <form class="newsletter-form" id="newsletter-form">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
                 <button type="submit" value="Subscribe">Subscribe</button>
+                <p id="form-message"></p>
             </form>
             </div>
         </section>
@@ -122,27 +123,30 @@
             <ul class="footer-section navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="featured.html">Featured Content</a></li>
-                <li><a href="about.html">About us & Contact</a></li>
+                <li><a href="contact.html">About us & Contact</a></li>
             </ul>
           </div>
         
         <div class="footer-section resources">
             <h3>More Resources:</h3>
             <ul class="footer-resources">
-                <li><a href="https://github.com">GitHub</a></li>
-                <li><a href="https://dev.to">Dev</a></li>
+                <li><a href="https://github.com/Tuminha​​">GitHub</a></li>
+                <li><a href="https://dev.to/tuminha​​">Dev</a></li>
             </ul>
         </div>
         <div class="footer-section contact">
             <h3>Contact:</h3>
             <ul class="footer-contacts">
                 <li><a href="mailto:x@example.com">X</a></li>
-                <li><a href="https://linkedin.com">Linkedin</a></li>
-                <li><a href="https://facebook.com">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/francisco-jose-teixeira-barbosa-55040816/?originalSubdomain=ch">Linkedin</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100010437153747">Facebook</a></li>
             </ul>
         </div>
       </div>
     </footer>
+
+
+  <script src="./mailerlite.js"></script>
 </body>
       
 </html>
