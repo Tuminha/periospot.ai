@@ -736,6 +736,7 @@ footer h3 {
 #research-header {
   background-color: var(--vivid-yellow);
   border: none;
+  color: var(--black);
 }
 
 #ai-tech-header {
